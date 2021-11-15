@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     public bool won;
 
     [Header("UI Stuff")]
+    public GameObject gameOverScreen;
     public TMP_Text countText;
     public TMP_Text winText;
     public TMP_Text timerText;
@@ -22,6 +23,7 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
+        gameOverScreen.SetActive(false);
         winCount = GameObject.FindGameObjectsWithTag("Pick Up").Length;
 
         countText.text = "Count: " + count + " / " + winCount;
@@ -53,20 +55,25 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Pick Up"))
         {
-            CheckCount();
+            SetCountText();
             //Destroy(other.gameObject);
             other.gameObject.SetActive(false);
         }
     }
 
-    void CheckCount()
+    void SetCountText()
     {
         count++;
         countText.text = "Count: " + count + " / " + winCount;
         if (count == winCount)
         {
-            won = true;
-            winText.text = "You Win!\n" + "<color=#ff63AE69><size=50>" + "Your Time: " + timer.ToString("F3");
+            WinGame();
         }
+    }
+
+    void WinGame()
+    {
+        gameOverScreen.SetActive(true);
+        winText.text = "You Win!\n" + "<color=#ff63AE69><size=50>" + "Your Time: " + timer.ToString("F3");
     }
 }

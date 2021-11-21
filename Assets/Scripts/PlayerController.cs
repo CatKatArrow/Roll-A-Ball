@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("UI Stuff")]
     public GameObject gameOverScreen;
+    public GameObject nextLevelScreen;
     public TMP_Text countText;
     public TMP_Text winText;
     public TMP_Text timerText;
@@ -27,6 +28,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         count = 0;
         gameOverScreen.SetActive(false);
+        nextLevelScreen.SetActive(false);
         winCount = GameObject.FindGameObjectsWithTag("Pick Up").Length;
 
         countText.text = "Count: " + count + " / " + winCount;
@@ -85,7 +87,7 @@ public class PlayerController : MonoBehaviour
 
     void WinGame()
     {
-        gameOverScreen.SetActive(true);
+        nextLevelScreen.SetActive(true);
         winText.text = "You Win!\n" + "<color=#ff63AE69><size=50>" + "Your Time: " + timer.ToString("F3");
     }
 

@@ -89,6 +89,10 @@ public class PlayerController : MonoBehaviour
     {
         nextLevelScreen.SetActive(true);
         winText.text = "You Win!\n" + "<color=#ff63AE69><size=50>" + "Your Time: " + timer.ToString("F3");
+        string currLevel = UnityEngine.SceneManagement.SceneManager.GetActiveScene().name;
+        char nextLevel = currLevel[currLevel.Length - 1];
+        int nextInt = (int)char.GetNumericValue(nextLevel) + 1;
+        PlayerPrefs.SetInt("Level" + nextInt, 1);
     }
 
     private void OnCollisionEnter(Collision collision)

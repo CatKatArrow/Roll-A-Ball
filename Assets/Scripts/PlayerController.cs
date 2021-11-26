@@ -60,6 +60,8 @@ public class PlayerController : MonoBehaviour
 
         float moveHorizintal = Input.GetAxis("Horizontal");
         float moveVertical = Input.GetAxis("Vertical");
+        
+
 
         Vector3 movement = new Vector3(moveHorizintal, 0.0f, moveVertical);
         rb.AddForce(movement * speed);   

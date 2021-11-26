@@ -1,0 +1,329 @@
+Using pre-set license
+Built from '2020.2/release' branch; Version is '2020.2.4f1 (becced5a802b) revision 12504301'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home; OS build 19043.1348; Version 2009; 64bit' Language: 'en' Physical Memory: 16343 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+E:\Software\Game Engines\Unity\2020.2.4f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/University/AGA206/Week 1/Roll-A-Ball
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+58140
+Successfully changed project path to: E:/University/AGA206/Week 1/Roll-A-Ball
+E:/University/AGA206/Week 1/Roll-A-Ball
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 15.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.2.4f1 (becced5a802b)
+[Subsystems] Discovering subsystems at path E:/Software/Game Engines/Unity/2020.2.4f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/University/AGA206/Week 1/Roll-A-Ball/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 (ID=0x1b81)
+    Vendor:   
+    VRAM:     8088 MB
+    Driver:   30.0.14.9676
+Initialize mono
+Mono path[0] = 'E:/Software/Game Engines/Unity/2020.2.4f1/Editor/Data/Managed'
+Mono path[1] = 'E:/Software/Game Engines/Unity/2020.2.4f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'E:/Software/Game Engines/Unity/2020.2.4f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56108
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: E:/Software/Game Engines/Unity/2020.2.4f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.001147 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 14.52 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.840 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.000443 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.651 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.11 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 661 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 45.8 MB.
+System memory in use after: 45.8 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 1103.
+Total: 1.355900 ms (FindLiveObjects: 0.090700 ms CreateObjectMapping: 0.018600 ms MarkObjects: 1.184700 ms  DeleteObjects: 0.060800 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Level1/ReflectionProbe-0.exr
+  artifactKey: Guid(020868beb4d23dc469c60d91857483a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1/ReflectionProbe-0.exr using Guid(020868beb4d23dc469c60d91857483a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4665d6ecbb4f321c231caa6cc248e021') in 0.116505 seconds
+  Import took 0.117627 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000338 seconds.
+  path: Assets/Images/football.jpg
+  artifactKey: Guid(e47e49b073881794dafb1dc96f0ddb4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Images/football.jpg using Guid(e47e49b073881794dafb1dc96f0ddb4e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb8df83b57481980d23e1990b7d60b43') in 0.083392 seconds
+  Import took 0.084528 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 222.101079 seconds.
+  path: Assets/Textures/InsideBende_LP_Albedo 1.png
+  artifactKey: Guid(37a7ba34241f5da45999ab0ac5b12122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_Albedo 1.png using Guid(37a7ba34241f5da45999ab0ac5b12122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09356bedef9e176b5b5a90c0137468f8') in 0.017642 seconds
+  Import took 0.019118 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000459 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.13 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.584 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.12 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 642 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 48.0 MB.
+System memory in use after: 48.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1140.
+Total: 1.449900 ms (FindLiveObjects: 0.077700 ms CreateObjectMapping: 0.015500 ms MarkObjects: 1.343300 ms  DeleteObjects: 0.012300 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 1621.972486 seconds.
+  path: Assets/Textures/InsideBende_LP_AO 1.png
+  artifactKey: Guid(00bdefe0594069a4c8dffa0d22fe0133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_AO 1.png using Guid(00bdefe0594069a4c8dffa0d22fe0133) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e098bc6a729c34ac13159cb3cb6f148') in 0.034298 seconds
+  Import took 0.035610 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 9.060588 seconds.
+  path: Assets/Textures/InsideBende_LP_Metalic 1.png
+  artifactKey: Guid(8eed79db5cf32564db3dca32818d6d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_Metalic 1.png using Guid(8eed79db5cf32564db3dca32818d6d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '609f9b48bc8a2b3ea8e061dc7e8f506a') in 0.016464 seconds
+  Import took 0.017607 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.458184 seconds.
+  path: Assets/Textures/OutsideBend_LP_AO 1.png
+  artifactKey: Guid(df78ab53fd7ba064882c77595c3a979d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/OutsideBend_LP_AO 1.png using Guid(df78ab53fd7ba064882c77595c3a979d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f907754cd80d8eb10aae2ca51c4adfab') in 0.024579 seconds
+  Import took 0.025751 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 75.312909 seconds.
+  path: Assets/Textures/InsideBende_LP_Metalic 1.png
+  artifactKey: Guid(8eed79db5cf32564db3dca32818d6d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_Metalic 1.png using Guid(8eed79db5cf32564db3dca32818d6d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d3dff1a5b555800f618134dc6c32b0') in 0.008155 seconds
+  Import took 0.009421 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.004399 seconds.
+  path: Assets/Textures/InsideBende_LP_Metalic 1.png
+  artifactKey: Guid(8eed79db5cf32564db3dca32818d6d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_Metalic 1.png using Guid(8eed79db5cf32564db3dca32818d6d2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d3dff1a5b555800f618134dc6c32b0') in 0.008726 seconds
+  Import took 0.010062 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.719855 seconds.
+  path: Assets/Textures/InsideBende_LP_Albedo 1.png
+  artifactKey: Guid(37a7ba34241f5da45999ab0ac5b12122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_Albedo 1.png using Guid(37a7ba34241f5da45999ab0ac5b12122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e9353321cbdc906dd34fe425be1c79') in 0.007796 seconds
+  Import took 0.009021 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.003252 seconds.
+  path: Assets/Textures/InsideBende_LP_Albedo 1.png
+  artifactKey: Guid(37a7ba34241f5da45999ab0ac5b12122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_Albedo 1.png using Guid(37a7ba34241f5da45999ab0ac5b12122) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3e9353321cbdc906dd34fe425be1c79') in 0.006598 seconds
+  Import took 0.007736 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 188.869940 seconds.
+  path: Assets/Textures/InsideBende_LP_Normal 1.png
+  artifactKey: Guid(a5e685cba70c86249942114ad8140100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_Normal 1.png using Guid(a5e685cba70c86249942114ad8140100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67fbd1761e7c4e6cd8c6385a18bff0e') in 0.007015 seconds
+  Import took 0.008297 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000386 seconds.
+  path: Assets/Textures/InsideCorner_LP_Normal 1.png
+  artifactKey: Guid(0f9fc646d59147d4ca51bd49d0bbe129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideCorner_LP_Normal 1.png using Guid(0f9fc646d59147d4ca51bd49d0bbe129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b96b3180a1440a78be9210a42174104c') in 0.007245 seconds
+  Import took 0.008867 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000373 seconds.
+  path: Assets/Textures/InsideCorner_LP_AO 1.png
+  artifactKey: Guid(3bf52030720b5204a8b30c6e5b7df354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideCorner_LP_AO 1.png using Guid(3bf52030720b5204a8b30c6e5b7df354) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a83a77259c3cf457d37931f55f3173c') in 0.026256 seconds
+  Import took 0.044089 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000360 seconds.
+  path: Assets/Textures/InsideBende_LP_Normal 1.png
+  artifactKey: Guid(a5e685cba70c86249942114ad8140100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_Normal 1.png using Guid(a5e685cba70c86249942114ad8140100) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e67fbd1761e7c4e6cd8c6385a18bff0e') in 0.005387 seconds
+  Import took 0.006648 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000387 seconds.
+  path: Assets/Textures/InsideCorner_LP_Metalic 1.png
+  artifactKey: Guid(f60aaf0f01a59b54daed56ed8e7d36bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideCorner_LP_Metalic 1.png using Guid(f60aaf0f01a59b54daed56ed8e7d36bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b237b3086252916680c90a5aa73091b3') in 0.008065 seconds
+  Import took 0.020008 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Textures/OutsideBend_LP_Albedo 1.png
+  artifactKey: Guid(0b3c75ece2b246d40a56e09639d11955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/OutsideBend_LP_Albedo 1.png using Guid(0b3c75ece2b246d40a56e09639d11955) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd4458035cd482bd5d9f4bbb35874fe0') in 0.008047 seconds
+  Import took 0.009146 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000393 seconds.
+  path: Assets/Textures/InsideCorner_LP_Albedo 1.png
+  artifactKey: Guid(f3c77425a6e504649aa13b891d9df06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideCorner_LP_Albedo 1.png using Guid(f3c77425a6e504649aa13b891d9df06a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a8f64d0c834b0909c33e1838bbeb9783') in 0.008478 seconds
+  Import took 0.009961 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 192.461077 seconds.
+  path: Assets/Scenes/Level1.unity
+  artifactKey: Guid(a32f61f57bac9ec4094b0bd166d7712b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Level1.unity using Guid(a32f61f57bac9ec4094b0bd166d7712b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df151e34f5dc5f2f356a70e200cc6d43') in 0.002423 seconds
+  Import took 0.003782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 147.820284 seconds.
+  path: Assets/Textures/OutsideConrer_LP_Albedo 1.png
+  artifactKey: Guid(90677b1f7c06e904787fe4f6073a1204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/OutsideConrer_LP_Albedo 1.png using Guid(90677b1f7c06e904787fe4f6073a1204) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5be5bab74e4d83309ed34ec439d1b803') in 0.007281 seconds
+  Import took 0.008460 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.664729 seconds.
+  path: Assets/Textures/OutsideConrer_LP_AO 1.png
+  artifactKey: Guid(c8d4e1553c48d954bb1b1975c84971dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/OutsideConrer_LP_AO 1.png using Guid(c8d4e1553c48d954bb1b1975c84971dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6041f62138eb56b654aa3dc9a49cc8ed') in 0.007743 seconds
+  Import took 0.008954 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000854 seconds.
+  path: Assets/Textures/OutsideConrer_LP_AO 1.png
+  artifactKey: Guid(c8d4e1553c48d954bb1b1975c84971dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/OutsideConrer_LP_AO 1.png using Guid(c8d4e1553c48d954bb1b1975c84971dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6041f62138eb56b654aa3dc9a49cc8ed') in 0.007861 seconds
+  Import took 0.009059 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.206421 seconds.
+  path: Assets/Textures/OutsideConrer_LP_Albedo 2.png
+  artifactKey: Guid(83dae4be6ea276e488d6497a2be322f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/OutsideConrer_LP_Albedo 2.png using Guid(83dae4be6ea276e488d6497a2be322f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86a24ef79d5bd5d03bdc3447450154da') in 0.006992 seconds
+  Import took 0.008164 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000514 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.568 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.14 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 642 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 48.0 MB.
+System memory in use after: 48.1 MB.
+
+Unloading 4 unused Assets to reduce memory usage. Loaded Objects now: 1142.
+Total: 1.068300 ms (FindLiveObjects: 0.086300 ms CreateObjectMapping: 0.018600 ms MarkObjects: 0.951700 ms  DeleteObjects: 0.010800 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 193.547640 seconds.
+  path: Assets/Textures/Floor_LP_Albedo 1.png
+  artifactKey: Guid(752e62839aa30544e8863081b9a6fb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Floor_LP_Albedo 1.png using Guid(752e62839aa30544e8863081b9a6fb05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea4bc4242e183bae00d97b15c322476') in 0.032077 seconds
+  Import took 0.033557 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 1.004397 seconds.
+  path: Assets/Textures/Floor_LP_AO 1.png
+  artifactKey: Guid(ce25bd02c4f4e7d4081e6e4a17db4145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/Floor_LP_AO 1.png using Guid(ce25bd02c4f4e7d4081e6e4a17db4145) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d9a46263abacc47052ac009fccf16ed') in 0.006399 seconds
+  Import took 0.007795 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 37.070228 seconds.
+  path: Assets/Textures/InsideBende_LP_Albedo.png
+  artifactKey: Guid(04a6784f46734ae4b81d2ec4fcf2a293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_Albedo.png using Guid(04a6784f46734ae4b81d2ec4fcf2a293) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4fd1e2765b3e0595ecb51f186530985') in 0.009682 seconds
+  Import took 0.010906 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 137.055843 seconds.
+  path: Assets/Textures/InsideBende_LP_AO.png
+  artifactKey: Guid(727977b82b0e64345a41c1316a4befa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Textures/InsideBende_LP_AO.png using Guid(727977b82b0e64345a41c1316a4befa9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '33d4f101d15d9259b2e0979fba98c6b6') in 0.007853 seconds
+  Import took 0.220232 seconds .
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

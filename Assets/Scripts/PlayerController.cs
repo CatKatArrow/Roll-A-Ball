@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
     public float speed = 10.0f;
     private Rigidbody rb;
-
+    
     private int count;
     private int winCount;
     float timer;

@@ -13,8 +13,11 @@ public class PlayerController : MonoBehaviour
     float timer;
     public bool won;
     GameObject resetPoint;
-    bool resetting = false;
+    public bool resetting = false;
     Color originalColour;
+
+    //Number for Lifes
+    public int lifes = 3;
 
     [Header("UI Stuff")]
     public GameObject gameOverScreen;
@@ -71,6 +74,9 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Pick Up"))
         {
+            if (resetting)
+                return;
+
             SetCountText();
             //Destroy(other.gameObject);
             other.gameObject.SetActive(false);
@@ -122,5 +128,21 @@ public class PlayerController : MonoBehaviour
         }
         GetComponent<Renderer>().material.color = originalColour;
         resetting = false;
+        ChangeLifes();
+    }
+
+    public void ChangeLifes()
+    {
+        lifes -= 1;
+        if (lifes == 0)
+        {
+            GameOver();
+        }
+    }
+
+    void GameOver()
+    {
+        gameOverScreen.SetActive(true);
+        resetting = true;
     }
 }

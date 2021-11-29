@@ -10,8 +10,12 @@ public class LevelUnlock : MonoBehaviour
     public Button level2;
     public Button level3;
 
-    // Start is called before the first frame update
     void Start()
+    {
+        RestData();
+    }
+    // Start is called before the first frame update
+    void RestData()
     {
         PlayerPrefs.SetInt("Level1",1);
 
@@ -43,9 +47,10 @@ public class LevelUnlock : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void DeleteData()
     {
-        
+        PlayerPrefs.DeleteAll();
+        RestData();
     }
+
 }

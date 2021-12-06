@@ -6,6 +6,7 @@ using TMPro;
 public class PlayerController : MonoBehaviour
 {
     public float speed = 10.0f;
+    public float jumpSpeed = 1f;
     private Rigidbody rb;
     
     private int count;
@@ -25,6 +26,7 @@ public class PlayerController : MonoBehaviour
     public TMP_Text countText;
     public TMP_Text winText;
     public TMP_Text timerText;
+    public List<GameObject> healthIcons;
 
     void Start()
     {
@@ -45,6 +47,7 @@ public class PlayerController : MonoBehaviour
 
         Time.timeScale = 1;
 
+        UpdateHealthIcons();
     }
 
     void Update()
@@ -54,6 +57,13 @@ public class PlayerController : MonoBehaviour
             timer += Time.deltaTime;
             timerText.text = "Time: " + timer.ToString("F2");
         }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            //Debug.Log("Jump");
+            rb.AddForce(Vector3.up * jumpSpeed);
+        }
+
     }
 
     void FixedUpdate()
@@ -65,9 +75,10 @@ public class PlayerController : MonoBehaviour
         float moveVertical = Input.GetAxis("Vertical");
         
 
-
         Vector3 movement = new Vector3(moveHorizintal, 0.0f, moveVertical);
-        rb.AddForce(movement * speed);   
+        rb.AddForce(movement * speed);
+
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -134,6 +145,7 @@ public class PlayerController : MonoBehaviour
     public void ChangeLifes()
     {
         lifes -= 1;
+        UpdateHealthIcons();
         if (lifes == 0)
         {
             GameOver();
@@ -144,5 +156,18 @@ public class PlayerController : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
         resetting = true;
+    }
+
+    void UpdateHealthIcons()
+    {
+        for(int i =0; i < healthIcons.Count; i++)
+        {
+            healthIcons[i].SetActive(false);
+        }
+
+        for (int i = 0; i < lifes; i++)
+        {
+            healthIcons[i].SetActive(true);
+        }
     }
 }

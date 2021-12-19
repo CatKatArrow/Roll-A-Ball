@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
     GameObject resetPoint;
     public bool resetting = false;
     Color originalColour;
+    bool grounded = true;
+
+    CameraController cameraController;
 
     //Number for Lifes
     public int lifes = 3;
@@ -41,6 +44,8 @@ public class PlayerController : MonoBehaviour
 
         resetPoint = GameObject.Find("Reset Point");
         originalColour = GetComponent<Renderer>().material.color;
+
+        cameraController = FindObjectOfType<CameraController>();
 
         timer = 0;
         won = false;
@@ -71,14 +76,22 @@ public class PlayerController : MonoBehaviour
         if (resetting)
             return;
 
-        float moveHorizintal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
-        
+        if (grounded)
+        {
+            float moveHorizintal = Input.GetAxis("Horizontal");
+            float moveVertical = Input.GetAxis("Vertical");
+            Vector3 movement = new Vector3(moveHorizintal, 0.0f, moveVertical);
 
-        Vector3 movement = new Vector3(moveHorizintal, 0.0f, moveVertical);
-        rb.AddForce(movement * speed);
+            if (cameraController.cameraStyle == CameraStyle.Free)
+            {
+                //rotates the player to the dirextion of the camera.
+                transform.eulerAngles = Camera.main.transform.eulerAngles;
+                //translates the input vectors into coordinates.
+                movement = transform.TransformDirection(movement);
+            }
 
-
+            rb.AddForce(movement * speed);
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -112,6 +125,7 @@ public class PlayerController : MonoBehaviour
         char nextLevel = currLevel[currLevel.Length - 1];
         int nextInt = (int)char.GetNumericValue(nextLevel) + 1;
         PlayerPrefs.SetInt("Level" + nextInt, 1);
+        Cursor.lockState = CursorLockMode.None;
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -120,6 +134,18 @@ public class PlayerController : MonoBehaviour
         {
             StartCoroutine(ResetPlayer());
         }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        if (collision.collider.CompareTag("Ground"))
+            grounded = true;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.CompareTag("Ground"))
+            grounded = false;
     }
 
     public IEnumerator ResetPlayer()
@@ -156,6 +182,7 @@ public class PlayerController : MonoBehaviour
     {
         gameOverScreen.SetActive(true);
         resetting = true;
+        Cursor.lockState = CursorLockMode.None;
     }
 
     void UpdateHealthIcons()

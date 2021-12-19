@@ -18,6 +18,7 @@ public class SceneController : MonoBehaviour
     // Loads out Title scene. Must be called Title exactly.
     public void ToTitleScene()
     {
+        Cursor.lockState = CursorLockMode.None;
         SceneManager.LoadScene("Title");
     }
     
